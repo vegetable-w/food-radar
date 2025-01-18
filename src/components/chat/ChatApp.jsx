@@ -120,7 +120,7 @@ function ChatApp() {
 
       setMessages((prev) => [
         ...prev.filter((msg) => msg.type !== "spinner"),
-        { text: `Sorry, something went wrong: ${errorMsg}`, sender: "Bot" },
+        { text: `エラー: ${errorMsg}`, sender: "Bot" },
       ]);
     }
   };
